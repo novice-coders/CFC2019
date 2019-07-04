@@ -3,12 +3,561 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Call for Code 2019</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CFC 2019</title>
+    <link href="css/baseStyle.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/site.css" />
+
 </head>
 
 <body>
-    <h1>Call for Code 2019!!</h1>
+    <!-- Preloader-->
+    <div class="loader-container">
+        <div class="loader">
+            <div id="mask">
+                <svg class="preloader-icon" width="34" height="38" viewbox="0 0 34 38">
+                    <path class="preloader-path" stroke-dashoffset="0" d="M29.437 8.114L19.35 2.132c-1.473-.86-3.207-.86-4.68 0L4.153 8.114C2.68 8.974 1.5 10.56 1.5 12.28v11.964c0 1.718 1.22 3.306 2.69 4.165l10.404 5.98c1.47.86 3.362.86 4.834 0l9.97-5.98c1.472-.86 2.102-2.45 2.102-4.168V12.28c0-1.72-.59-3.306-2.063-4.166z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader-->
+    <header>
+        <nav class="navbar navbar-fixed-top header-full header-dark" data-spy="affix" data-offset-top="80">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="burger-icon">
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar middle"></span>
+                        <span class="icon-bar bottom"></span>
+                    </div>
+                    <a class="navbar-brand" href="#">
+                        <script data-pagespeed-no-defer>//<![CDATA[
+                            (function () { for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function (b, c, a) { if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters."); b != Array.prototype && b != Object.prototype && (b[c] = a.value) }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) { var m = k[l]; m in h || (h[m] = {}); h = h[m] } var n = k[k.length - 1], p = h[n], q = p ? p : function (b) { var c; if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined"); c = this + ""; if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value"); b |= 0; for (var a = ""; b;)if (b & 1 && (a += c), b >>>= 1) c += c; return a }; q != p && null != q && g(h, n, { configurable: !0, writable: !0, value: q }); var t = this; function u(b, c) { var a = b.split("."), d = t; a[0] in d || !d.execScript || d.execScript("var " + a[0]); for (var e; a.length && (e = a.shift());)a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c }; function v(b) { var c = b.length; if (0 < c) { for (var a = Array(c), d = 0; d < c; d++)a[d] = b[d]; return a } return [] }; function w(b) { var c = window; if (c.addEventListener) c.addEventListener("load", b, !1); else if (c.attachEvent) c.attachEvent("onload", b); else { var a = c.onload; c.onload = function () { b.call(this); a && a.call(this) } } }; var x; function y(b, c, a, d, e) { this.h = b; this.j = c; this.l = a; this.f = e; this.g = { height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight, width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth }; this.i = d; this.b = {}; this.a = []; this.c = {} } function z(b, c) { var a, d, e = c.getAttribute("data-pagespeed-url-hash"); if (a = e && !(e in b.c)) if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1; else { d = c.getBoundingClientRect(); var f = document.body; a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop); d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft); f = a.toString() + "," + d; b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width) } a && (b.a.push(e), b.c[e] = !0) } y.prototype.checkImageForCriticality = function (b) { b.getBoundingClientRect && z(this, b) }; u("pagespeed.CriticalImages.checkImageForCriticality", function (b) { x.checkImageForCriticality(b) }); u("pagespeed.CriticalImages.checkCriticalImages", function () { A(x) }); function A(b) { b.b = {}; for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d)a = a.concat(v(document.getElementsByTagName(c[d]))); if (a.length && a[0].getBoundingClientRect) { for (d = 0; c = a[d]; ++d)z(b, c); a = "oh=" + b.l; b.f && (a += "&n=" + b.f); if (c = !!b.a.length) for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) { var e = "," + encodeURIComponent(b.a[d]); 131072 >= a.length + e.length && (a += e) } b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0); C = a; if (c) { d = b.h; b = b.j; var f; if (window.XMLHttpRequest) f = new XMLHttpRequest; else if (window.ActiveXObject) try { f = new ActiveXObject("Msxml2.XMLHTTP") } catch (r) { try { f = new ActiveXObject("Microsoft.XMLHTTP") } catch (D) { } } f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a)) } } } function B() { var b = {}, c; c = document.getElementsByTagName("IMG"); if (!c.length) return {}; var a = c[0]; if (!("naturalWidth" in a && "naturalHeight" in a)) return {}; for (var d = 0; a = c[d]; ++d) { var e = a.getAttribute("data-pagespeed-url-hash"); e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = { rw: a.width, rh: a.height, ow: a.naturalWidth, oh: a.naturalHeight }) } return b } var C = ""; u("pagespeed.CriticalImages.getBeaconData", function () { return C }); u("pagespeed.CriticalImages.Run", function (b, c, a, d, e, f) { var r = new y(b, c, a, e, f); x = r; d && w(function () { window.setTimeout(function () { A(r) }, 0) }) }); })(); pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'http://droitlab.com/html/smith/v1/main/index-2-dark.html', 'oG-7lxx8_G', true, false, '_2vpUTX_i4Y');
+//]]></script><img src="data:image/webp;base64,UklGRvICAABXRUJQVlA4TOUCAAAvZAAIEH8gFkxmnf+VwtzN3UQkdBxQ+v9/bdtu7KNYDqf1aVjQ4EbJE1jjdXRMbzuVTr0t5fHkwZ1v5IyZGcu9yuPdQmNyXmTXsaPPwRCI6P8E0Jz7dMX72IAjK9tom7vgOz/buwFmHW/3vQ8EkZvXL7di3GYkTTLg2PpN2MGMWyC/TjsDYFH3tqmXM1BwdD0K9gMrNoZb7TMGSm5ej4oDcNBiY7DVSbcBSw6uQ5TaA9PusbvVvL1AzZ41ie68GHjPcgBVPynTumIWSO1ak4oxsOg45NLJStymaggjnmBN0xZ1h+Cg4+lQB32Qd2yttkBeQyj5tmGbJUchcnBtDh8A3vMEULHxKG2nLYdwOFyblouOAnUdbHdQ44B1rdkHkSZBO2q6e60uxMDT2gUF3UKHB9VrOnjBO9od9F2g7uRtNx/723eDTvhByz1t9qUatJl3DDhp6778spe14w8tNh1Mr6+o4XlvaKo5AMzbf/PNV9fMVvREB1Fd+4A5Y5/TpzQBIg2BqllgpbxPtavpE3tgX+peYF7LGa0nChz0BMByGYh8d6b8kobAY74LMGsCLOmOSL2oRcmxJovALuP6jnyrJYeb8hrABc3u0hgTcrcvOAiv590LFIzt2acBx1m2v4m6ITR8lIIO5C1y8N2q3eQnDzoMTJtMUjAhl2ZW7G5RMSTSrZQsdx10nOnxugGl+D03ATWNKRnz2Ak0bLFohoMaMm/MhMNUh9IEqttKDkBe3c6821kaQ7MtqmU46btQdZAph6K02xPsMjvXNKv2UbFvJO2lbl+LRhHmHYaGIXMOnEpwkt+LzDlI1GhoSNXsmSSg6mhTweuhah+RJ2DOHY3rWfZL+5hymN+Sb02g6oF0C3zrZAZyNbuhbkjevTCh5Qyz+gA85uQvbplwHGa0GMBIajG88U/3AE89DdzZA7nl8qUQ3XkbEKV6P3kHILrzzi6AD20uBqz9/jtvA3bS8SN1k3sCNjIA"
+                            alt="logo" data-pagespeed-url-hash="2619266513" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                </div>
+            </div>
+        </nav>
+        <div class="canvas-menu">
+            <div class="header-inner">
+                <a href="index-5.html" class="nav-logo hidden-con"><img src="data:image/webp;base64,UklGRvICAABXRUJQVlA4TOUCAAAvZAAIEH8gFkxmnf+VwtzN3UQkdBxQ+v9/bdtu7KNYDqf1aVjQ4EbJE1jjdXRMbzuVTr0t5fHkwZ1v5IyZGcu9yuPdQmNyXmTXsaPPwRCI6P8E0Jz7dMX72IAjK9tom7vgOz/buwFmHW/3vQ8EkZvXL7di3GYkTTLg2PpN2MGMWyC/TjsDYFH3tqmXM1BwdD0K9gMrNoZb7TMGSm5ej4oDcNBiY7DVSbcBSw6uQ5TaA9PusbvVvL1AzZ41ie68GHjPcgBVPynTumIWSO1ak4oxsOg45NLJStymaggjnmBN0xZ1h+Cg4+lQB32Qd2yttkBeQyj5tmGbJUchcnBtDh8A3vMEULHxKG2nLYdwOFyblouOAnUdbHdQ44B1rdkHkSZBO2q6e60uxMDT2gUF3UKHB9VrOnjBO9od9F2g7uRtNx/723eDTvhByz1t9qUatJl3DDhp6778spe14w8tNh1Mr6+o4XlvaKo5AMzbf/PNV9fMVvREB1Fd+4A5Y5/TpzQBIg2BqllgpbxPtavpE3tgX+peYF7LGa0nChz0BMByGYh8d6b8kobAY74LMGsCLOmOSL2oRcmxJovALuP6jnyrJYeb8hrABc3u0hgTcrcvOAiv590LFIzt2acBx1m2v4m6ITR8lIIO5C1y8N2q3eQnDzoMTJtMUjAhl2ZW7G5RMSTSrZQsdx10nOnxugGl+D03ATWNKRnz2Ak0bLFohoMaMm/MhMNUh9IEqttKDkBe3c6821kaQ7MtqmU46btQdZAph6K02xPsMjvXNKv2UbFvJO2lbl+LRhHmHYaGIXMOnEpwkt+LzDlI1GhoSNXsmSSg6mhTweuhah+RJ2DOHY3rWfZL+5hymN+Sb02g6oF0C3zrZAZyNbuhbkjevTCh5Qyz+gA85uQvbplwHGa0GMBIajG88U/3AE89DdzZA7nl8qUQ3XkbEKV6P3kHILrzzi6AD20uBqz9/jtvA3bS8SN1k3sCNjIA"
+                        alt="" data-pagespeed-url-hash="2619266513" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                <div class="close"><i class="ti-close"></i></div>
+                <div class="menunav-container">
+                    <ul class="menu" id="nav">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#expertise">Expertise</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--=============Start hero section===========-->
+    <section class="hero-section dk-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 static">
+                    <div class="hero-content">
+                        <h3 class="hello-t">Hello! This is</h3>
+                        <h1 class="name-t">Michael <span>Smith</span></h1>
+                        <h2 class="expart-n">I am a Creative Director</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco.</p>
+                        <a href="#" class="btn downlod-btn"><span data-letters="Download CV">Download CV</span><i class="lnr lnr-download"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-5 hero-img">
+                    <img class="img-responsive" src="assests/doc_img.png" alt="hero"
+                        data-pagespeed-url-hash="876248222" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============End hero section===========-->
+    <!--========== start about area==========-->
+    <section class="about-area dk-bg-light" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 about-title">
+                    <h2>ABOUT Me</h2>
+                    <h4>Michael Smith</h4>
+                </div>
+                <div class="col-sm-9 about-text">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea taki</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========== End about area==========-->
+    <!--============start services area==========-->
+    <section class="services-area sec-pad dk-bg" id="service">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2> services</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes Create any of elements and
+                    shortcodes Create </p>
+            </div>
+            <div class="services-slider owl-carousel">
+                <div class="item service-item">
+                    <i class="ti-layout"></i>
+                    <h2 class="title">Web Design</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-pencil-alt"></i>
+                    <h2 class="title">App Design</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-settings"></i>
+                    <h2 class="title">UI/UX Research</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-layout"></i>
+                    <h2 class="title">Web Design</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-pencil-alt"></i>
+                    <h2 class="title">App Design</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-settings"></i>
+                    <h2 class="title">UI/UX Research</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+                <div class="item service-item">
+                    <i class="ti-settings"></i>
+                    <h2 class="title">UI/UX Research</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============start services area==========-->
+    <!--======== start portfolio-2 area=========-->
+    <section class="portfolio-2-area sec-pad dk-bg-light" id="portfolio">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2>Awesome Portfolio</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes Create any of elements and
+                    shortcodes Create </p>
+            </div>
+            <ul class="row m0 portfolio-2-filter" id="filter">
+                <li class="active" data-filter="*" data-letters="all">All</li>
+                <li data-filter=".brand" data-letters="Branding">Branding</li>
+                <li data-filter=".gr" data-letters="Graphics">Graphics</li>
+                <li data-filter=".web" data-letters="Web">web</li>
+                <li data-filter=".app" data-letters="App">app</li>
+            </ul>
+            <div id="portfolio-grid" class="row portfolio-gallery">
+                <div class="col-sm-4 col-xs-6 portfolio-item gr brand">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/1.jpg" title="Asweome Busienss Card" data-desc="Lorem ipsum dolor sit amet."
+                            class="popup">
+                            <img src="image/home3/portfolio/x1.jpg.pagespeed.ic.MuJjooFUQd.webp" alt=""
+                                data-pagespeed-url-hash="1156176837" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>Asweome Busienss Card</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6 portfolio-item app brand web">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/2.jpg" title="Asweome Logo" data-desc="Lorem ipsum dolor sit amet."
+                            class="popup">
+                            <img src="image/home3/portfolio/x2.jpg.pagespeed.ic.PB0KuJS0FW.webp" alt=""
+                                data-pagespeed-url-hash="1450676758" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>Asweome Logo</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6 portfolio-item gr brand app">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/3.jpg" title="UI/UX Design" data-desc="Lorem ipsum dolor sit amet."
+                            class="popup">
+                            <img src="image/home3/portfolio/x3.jpg.pagespeed.ic.tasg4B2QZg.webp" alt=""
+                                data-pagespeed-url-hash="1745176679" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>UI/UX Design</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6 portfolio-item gr brand">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/4.jpg" title="Web Design" data-desc="Web design with most recent design."
+                            class="popup">
+                            <img src="image/home3/portfolio/x4.jpg.pagespeed.ic.jonv9RT03W.webp" alt=""
+                                data-pagespeed-url-hash="2039676600" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>Web Design</h2>
+                            <p>Web design with most recent design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6 portfolio-item app brand">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/5.jpg" title="Graphic Design" data-desc="Awesome graphic design skills"
+                            class="popup">
+                            <img src="image/home3/portfolio/x5.jpg.pagespeed.ic.DLYHiRG-1R.webp" alt=""
+                                data-pagespeed-url-hash="2334176521" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>Graphic Design</h2>
+                            <p>Awesome graphic design skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6 portfolio-item gr web">
+                    <div class="gallery-item">
+                        <a href="image/home3/portfolio/6.jpg" title="Graphic Design" data-desc="Awesome graphic design skills"
+                            class="popup">
+                            <img src="image/home3/portfolio/x6.jpg.pagespeed.ic.6AZNB70VID.webp" alt=""
+                                data-pagespeed-url-hash="2628676442" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="text">
+                            <h2>Asweome Busienss Card</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======== End portfolio-2 area=========-->
+    <!--============ start expertise-2-area===========-->
+    <section class="expertise-2-area dk-bg" id="expertise">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2>My Expertise</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes. Create any layout combination
+                    you can imagine.</p>
+            </div>
+            <div class="row expertise2">
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-layout"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title col-9">UI/UX Design &amp; Research</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-pencil-alt"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">Web Development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-settings"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">WP Theme development</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-target"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">Website Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-lock"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">Mobile App Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 media expertise-media">
+                    <div class="media-left">
+                        <span class="ti-stats-up"></span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="title">Wireframing &amp; Prototyping</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============ End expertise-2-area===========-->
+    <!--=============Start fan-fact-area===========-->
+    <section class="fan-fact-area sec-pad dk-bg-light parallax-bg" data-stellar-background-ratio="0.2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="fact-item">
+                        <i class="lnr lnr-briefcase"></i>
+                        <span class="counter">535</span>
+                        <h4>projects completed</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fact-item">
+                        <i class="lnr lnr-rocket"></i>
+                        <span class="counter">125</span>
+                        <h4>happy clients</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fact-item">
+                        <i class="lnr lnr-gift"></i>
+                        <span class="counter">535</span>
+                        <h4>awards won</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="fact-item">
+                        <i class="lnr lnr-diamond"></i>
+                        <span class="counter">250</span>
+                        <h4>Themes published</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============End fan-fact-area===========-->
+    <!--============ start exprence-area =============-->
+    <section class="expreence-area sec-pad dk-bg" id="experiences">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2>Experiences</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes. Create any layout combination
+                    you can imagine.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <div class="exprence-items">
+                        <h4 data-line="01">June 2012 - 2016</h4>
+                        <h2 class="title">UI/UX Designer</h2>
+                        <h5>Adobe Inc.</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="exprence-items">
+                        <h4 data-line="02">June 2010 - 2012</h4>
+                        <h2 class="title">Product Designer</h2>
+                        <h5>Microsoft</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <div class="exprence-items">
+                        <h4 data-line="03">June 2008 - 2012</h4>
+                        <h2 class="title">Graphic Designer</h2>
+                        <h5>Dropbox.com</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============ End exprence-area =============-->
+    <!--=============Start blog-area section===========-->
+    <section class="blog-area sec-pad dk-bg-light" id="blog">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2>My Blog</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes. Create any layout combination
+                    you can imagine.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="blog-2-item">
+                        <a href="#" class="blog-img img-fill-container">
+                            <img src="image/home3/blog/x1.jpg.pagespeed.ic.qSYeaEMjNT.webp" alt=""
+                                data-pagespeed-url-hash="1297163095" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="content">
+                            <h4>technoogy</h4>
+                            <a href="#">
+                                <h2>incredible technology</h2>
+                            </a>
+                            <h5>Moinul Ahsan<span>Nov 2016</span></h5>
+                            <p>It is a long established fact that a reader will be distracted by the... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="blog-2-item">
+                        <a href="#" class="blog-img img-fill-container">
+                            <img src="image/home3/blog/x2.jpg.pagespeed.ic.Fp1GpZGdRf.webp" alt=""
+                                data-pagespeed-url-hash="1591663016" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="content">
+                            <h4>DESIGN</h4>
+                            <a href="#">
+                                <h2>Design trend 2016</h2>
+                            </a>
+                            <h5>Moinul Ahsan<span>Nov 2016</span></h5>
+                            <p>It is a long established fact that a reader will be distracted by the... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="blog-2-item">
+                        <a href="#" class="blog-img img-fill-container">
+                            <img src="image/home3/blog/x3.jpg.pagespeed.ic.75IRaYA63N.webp" alt=""
+                                data-pagespeed-url-hash="1886162937" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                        <div class="content">
+                            <h4>TRAVEL</h4>
+                            <a href="#">
+                                <h2>incredible Bangladesh</h2>
+                            </a>
+                            <h5>Moinul Ahsan<span>Nov 2016</span></h5>
+                            <p>It is a long established fact that a reader will be distracted by the... </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============End blog-area section===========-->
+    <!--========== start contact-area =============-->
+    <section class="contact-area sec-pad dk-bg" id="contact">
+        <div class="container">
+            <div class="section-title dk-gray-sec">
+                <h2>Contact Me</h2>
+                <p>Elated Themes provide a large collection of elements and shortcodes. Create any layout combination
+                    you can imagine.</p>
+            </div>
+            <div class="contact-form2">
+                <form id="contact-form" class="contact-form" action="contact/contact.php" method="post" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="form-name">Name</label>
+                                <input id="form-name" name="contactName" type="text" class="form-control contact-name"
+                                    placeholder="Type your name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="form-email">Phone number</label>
+                                <input id="form-email" name="contactMail" type="email" class="form-control contact-mail"
+                                    placeholder="Type your phone number">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input name="contactMail" type="email" class="form-control contact-mail" placeholder="Type your email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">your message</label>
+                        <textarea id="form-message" name="contactMessage" class="form-control contact-message"
+                            placeholder="Type your message here"></textarea>
+                    </div>
+                    <button type="submit">Send message</button>
+                    <span class="contact-submit-progress"></span>
+                    <p class="contact-submit-message"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--========== End contact-area =============-->
+
+
+    <!--=============Start footer-area ===========-->
+    <footer class="footer-area2">
+        <div class="footer-top">
+            <div class="container">
+                <a class="f-logo">
+                    Smith
+                </a>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.</p>
+                <ul class="f-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa  fa-behance"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                Copyright &copy; 2016 <a href="#">DroitThemes</a>
+            </div>
+        </div>
+    </footer>
+    <!--=============End footer-area ===========-->
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.2.4.js.pagespeed.jm.pePi6aKCxf.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js.pagespeed.jm.JWlSuVYgKt.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <script src="vendors/waypoint,_waypoints.min.js+countdown,_jquery.counterup.min.js+imagesloaded,_imagesloaded.pkgd.min.js+isotope,_isotope-min.js+magnific-popup,_jquery.magnific-popup.min.js.pagespeed.jc.vszAUaV-SK.js"></script>
+    <script>eval(mod_pagespeed_PfT9c5JhO0);</script>
+    <script>eval(mod_pagespeed_aSdcw74La1);</script>
+    <script>eval(mod_pagespeed_efuRnJkudu);</script>
+    <script>eval(mod_pagespeed_PIo3LdtkAe);</script>
+    <script>eval(mod_pagespeed_43W$Rh8aWc);</script>
+    <script src="vendors/vendors,_owl-carousel,_owl.carousel.min.js+js,_jquery-imagefill.js+js,_jquery-nav.js.pagespeed.jc.KRrUwGrKZu.js"></script>
+    <script>eval(mod_pagespeed_bDKq0Gq1XH);</script>
+    <script>eval(mod_pagespeed_7lwQfIfzmP);</script>
+    <script>eval(mod_pagespeed_aLRC1u$X7U);</script>
+    <script type="text/javascript" src="js/nicescroll.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js.pagespeed.jm.QgBoS9Xioy.js"></script>
 </body>
 
 </html>
