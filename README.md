@@ -4,6 +4,8 @@
 
 Project Simbioasis
 
+![alt text](https://novice-coders.github.io/CFC2019/img/logo.png)
+
 ### Project Description
 
 Brief description about the project and what have they done. Explain the project using the Architectural diagram(Must). Attach any demo video if is available of project.
