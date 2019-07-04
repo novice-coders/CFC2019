@@ -4,7 +4,7 @@
 
 Project Simbioasis
 
-![alt text](https://novice-coders.github.io/CFC2019/img/logo.png)
+![Project Logo](https://novice-coders.github.io/CFC2019/img/logo.png)
 
 ### Project Description
 
