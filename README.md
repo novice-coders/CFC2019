@@ -71,4 +71,4 @@ Project SIMBIoasis is envisioned to connect the needs of a population in a remot
 
 ### Architecture Diagram
 
-
+![Project Logo](https://novice-coders.github.io/CFC2019/img/ArchitectureDiagram.png)
