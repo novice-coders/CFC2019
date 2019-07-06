@@ -8,13 +8,13 @@ Project Simbioasis
 
 ### Project Description
 
-Helps emergency response teams to identify calamity-hit survivors in a remote area without internet access. 
+Helps emergency response teams to identify calamity-hit survivors in a remote area stripped off any network access. 
 
 The target-user would ideally install an app in their android smartphone. The app would enable the target-users to register themselves with some basic info. The user information is saved in the SIMBIoasis system.
 
 This prototype employs a multi-platform system consisting of two IOT devices, a node server with cloudant database, a resource and notification management interface written in Angular, and an (optional) Android app.
 
-The workflow essentially starts from one deployable IOT device, the spotter that leverages a SX-1278 LoRa module sitting on a Raspberry Pi 3. The Spotter is designed to scan available hotspots in its vicinity and dispatch consolidated data via Long Range Radio signal to the other IOT device which would then communicate with the server to make lives easier for the first responders and rescuer team.
+The workflow essentially starts from one deployable IOT device, the spotter that leverages a SX-1278 LoRa module sitting on a Raspberry Pi 3. The Spotter is designed to scan available hotspots in its vicinity and dispatch consolidated data via Long Range Radio signal to the other IOT device which would then communicate with the server to make it easier for the first responders and rescuer team.
 
 The SIMBIoasis system is hosted in IBM Cloud with its server setup using NodeJS and leveraging Cloudant database. It provides APIs to communicate with the IOT devices and Admin front-ends.
 
@@ -29,7 +29,6 @@ SIMBIoasis system can be used in the following scenarios:
 1. As a preparative measure for being aware of the existence and needs of the survivors in a remote area.
 
 2. When multiple devices are deployed in different regions, the SIMBIoasis dashboard shows consolidated data and helps prioritise rescue team deployments.
- 
 
 ### Current Problem
 
@@ -46,7 +45,7 @@ Project SIMBIoasis is envisioned to connect the needs of a population in a remot
   - Rasberry Pi
   - Arduino Nano
   - SX-1798 RA-02 LoRa modules
-  - GPS module
+  - GPS module Neo-6MV2
   - 433 MHz Antennas
   
 # Software
