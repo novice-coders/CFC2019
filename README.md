@@ -34,7 +34,7 @@ SIMBIoasis system can be used in the following scenarios:
 
 ### Current Problem
 
-At the time of a natural calamity, having the network down can be a great pain in the ass/distress. Identification and estimation of the location, size, and the needs of the affected populace in remote areas can be a herculean task for the rescue teams. Many times, rescuing people from the ongoing or after-effect of a disaster is a race against time. Even with ample resources at hand, rescue teams are in a difficult position to efficiently coordinate, attend, and uniformly distribute helpful resources and services to the needy.
+At the time of a natural calamity, having the network down can be a great distress. Identification and estimation of the location, size, and the needs of the affected populace in remote areas can be a herculean task for the rescue teams. Many times, rescuing people from the ongoing or after-effect of a disaster is a race against time. Even with ample resources at hand, rescue teams are in a difficult position to efficiently coordinate, attend, and uniformly distribute helpful resources and services to the needy.
 
 ### Solution Description
 
