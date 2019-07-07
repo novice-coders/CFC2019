@@ -30,7 +30,7 @@ SIMBIoasis system can be used in the following scenarios:
 
 2. When multiple devices are deployed in different regions, the SIMBIoasis dashboard shows consolidated data and helps prioritise rescue team deployments.
 
-![Project Logo](https://novice-coders.github.io/CFC2019/img/ArchitectureDiagram.png)
+[Our Vedio Link](https://youtu.be/13ciaZIJRsw)
 
 ### Current Problem
 

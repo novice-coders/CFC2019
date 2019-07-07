@@ -1,0 +1,31 @@
+# Update <REGISTRY> <NAMESPACE> values before use
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: radio-jocker
+  labels:
+    app: radio-jocker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: radio-jocker
+  template:
+    metadata:
+      labels:
+        app: radio-jocker
+    spec:
+      containers:
+      - name: radio-jocker
+        image: <REGISTRY>/<NAMESPACE>/myapp:v1.0.0
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+        env:
+        - name: CLOUDANT_URL
+          valueFrom:
+            secretKeyRef:
+              name: cloudant
+              key: url
+              optional: true
+
