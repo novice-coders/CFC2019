@@ -1,0 +1,9 @@
+<!-- Search form -->
+<input class="form-control" type="text" placeholder="Searching for...?" aria-label="Search">
+<input type="button" value="Go" class="pull-right btn btn-primary mt-10" (click)="showResult()">
+
+<ng-container *ngIf="showMap">
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="20">
+    <agm-marker *ngFor="let item of locations" [latitude]="item.lat" [longitude]="item.lng"></agm-marker>  
+  </agm-map>
+</ng-container>

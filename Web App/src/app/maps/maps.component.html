@@ -1,0 +1,10 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="20">
+  <agm-marker *ngFor="let item of locations" [latitude]="item.lat" [longitude]="item.lng" (markerClick)="openWindow(item.id)" 
+  [latitude]="item.lat" 
+  [longitude]="item.lng">
+  <agm-info-window 
+    [isOpen]="isInfoWindowOpen(item.id)"
+    [latitude]="item.lat" 
+    [longitude]="item.lng">User# {{item.id}}</agm-info-window>
+  </agm-marker>  
+</agm-map>

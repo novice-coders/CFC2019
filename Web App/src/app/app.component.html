@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <!-- Sidebar  -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <img style="width: 185px;" src="./assets/logo.png" alt="">
+    </div>
+    <ul class="list-unstyled components">
+      <li>
+        <a class="dropdown-toggle" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>        
+      </li>
+      <li>
+          <a class="dropdown-toggle" routerLink="/search" routerLinkActive="active">Search</a>        
+        </li>
+      <li>
+        <a class="dropdown-toggle" routerLink="/maps" routerLinkActive="active">Maps</a>
+      </li>
+      <li>
+        <a class="dropdown-toggle" routerLink="/help" routerLinkActive="active">Help</a>        
+      </li>      
+    </ul>    
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+    <nav class="navbar navbar-expand-lg" style="background: #232f3e;">
+      <div class="container-fluid">        
+          <span style="color: #fff;">{{getCurrentPage()}}</span>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
