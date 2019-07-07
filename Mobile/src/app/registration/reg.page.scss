@@ -1,0 +1,30 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+.logo {
+  width: 120px;
+  margin: 8px;
+  margin-left: 0px;
+}
+.heading{
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  color: #ffffff;
+  border-left: 1px solid #d8d8d7;
+  padding-left: 8px;
+  font-size: 17px;
+  font-weight: 100 !important;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.wlcm {
+background: linear-gradient(135deg, #E91E63 0%, rgba(147,26,222,0.83) 100%);
+color: #FFF;
+padding: 10px;
+font-size: 17px;
+}
+ion-list-header , ion-item {
+  color : #FFF;
+}

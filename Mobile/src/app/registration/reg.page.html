@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="/assets/logo.png" class="logo">
+      <div class="heading">Registration</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <!-- List of Input Items -->
+    <ion-list>
+      <ion-item>
+        <ion-label style="color: #FFC107;">Name</ion-label>
+        <ion-input  type="text" [(ngModel)]="name" slot="end" style="background: #232f3e;"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label style="color: #FFC107;">Age</ion-label>
+        <ion-input  type="number" [(ngModel)]="age"  maxlength="2" slot="end" style="background: #232f3e;"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label style="color: #FFC107;">Gender</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="gender">
+            <ion-select-option value="Female">Female</ion-select-option>
+            <ion-select-option value="Male">Male</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label style="color: #FFC107;">Blood Group</ion-label>
+        <ion-select placeholder="Select One" [(ngModel)]="bloodGroup">
+            <ion-select-option value="A+">A+</ion-select-option>
+            <ion-select-option value="A-">A-</ion-select-option>
+            <ion-select-option value="B+">B+</ion-select-option>
+            <ion-select-option value="B-">B-</ion-select-option>
+            <ion-select-option value="AB+">AB+</ion-select-option>
+            <ion-select-option value="AB-">AB-</ion-select-option>
+            <ion-select-option value="O+">O+</ion-select-option>
+            <ion-select-option value="O-">O-</ion-select-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label style="color: #FFC107;">Current Medications</ion-label>
+        <ion-input slot="end" type="text" [(ngModel)]="currentMedications" style="background: #232f3e;"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-button expand="block" (click)="onSubmit()">Submit</ion-button>
+</ion-content>

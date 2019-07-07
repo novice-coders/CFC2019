@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <img src="/assets/logo.png" class="logo">
+      <div class="heading">Dashboard</div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="welcome-card">
+    <div class="wlcm">Hi, {{name}}</div>
+  </ion-card>
+  <ion-card *ngIf="isSubmit" style="background: linear-gradient(60deg,#ffa726,#fb8c00);padding: 10px;color: #FFF;">
+    <div>You're all set, stay safe. Our device will connect, detect, and communicate your needs at the earliest
+      opportunity!</div>
+  </ion-card>
+  <ion-card *ngIf="isIotRead" style="background: linear-gradient(60deg,#66bb6a,#43a047);padding: 10px;color: #FFF;">
+    <div>Your information has been shared! Please remain in a safe area and await direct contact from the rescue team.</div>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <ion-list-header>Let us know what you need</ion-list-header>
+      <ion-item>
+        <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+        <ion-label>Rescue</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+        <ion-label>Food</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+        <ion-label>Madical Support</ion-label>
+      </ion-item>
+      <ion-button expand="block" (click)="presentToast()">Submit</ion-button>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
